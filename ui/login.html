@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UmemeHub</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="email" required>
+                <span id="loginEmailError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <span id="loginPasswordError" class="error"></span>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="showSignup">Register Here</a></p>
+    </div>
+    <script src="../scripts/loginvalid.js"></script>
+</body>
+</html>

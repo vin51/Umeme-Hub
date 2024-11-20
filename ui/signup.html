@@ -9,32 +9,37 @@
   <body>
     <div class="container">
       <h1>Register</h1>
-      <form id="registerForm" onsubmit="return validateForm()">
+      <!-- Changed form id to 'signupForm' for clarity -->
+      <form id="signupForm">
         <div class="form-group">
           <label for="username">Username:</label>
           <input type="text" id="username" name="username" required />
+          <span id="usernameError" class="error"></span>
         </div>
 
         <div class="form-group">
-            <label for="username">Email:</label>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
-          </div>
+            <span id="emailError" class="error"></span>
+        </div>
 
-          <div class="form-group">
-            <label for="username">Password:</label>
+        <div class="form-group">
+            <label for="password">Password:</label>
             <input type="password" id="password" name="password" required />
-          </div>
+            <span id="passwordError" class="error"></span>
+        </div>
 
-          <div class="form-group">
-            <label for="username">Confirm Paswword:</label>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
             <input type="password" id="confirm-password" name="confirm-password" required />
-          </div>
+            <span id="confirmPasswordError" class="error"></span>
+        </div>
 
-          <button type="submit">Register</button>
+        <button type="submit">Register</button>
       </form>
 
-      <p>Already have an account?<a href="login.html">Login Here</a></p>
+      <p>Already have an account? <a href="login.html">Login Here</a></p>
     </div>
-    <script src="../scripts/validation.js"></script>
+    <script src="../scripts/signupValid.j"></script>
   </body>
 </html>
