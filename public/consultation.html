@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>UmemeHub</title>
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+</head>
+<body>
+   <!-- Navigation -->
+   <nav class="navbar">
+       <div class="nav-brand">
+           <h1>UmemeHub</h1>
+       </div>
+       <div class="nav-links">
+           <a href="/">Home</a>
+           <a href="/#features">Features</a>
+           <a href="/#about">About</a>
+           <a href="/#contact">Contact</a>
+       </div>
+       <div class="nav-auth">
+           <a href="/login" class="login-btn">Login</a>
+           <a href="/signup" class="signup-btn">Sign Up</a>
+       </div>
+   </nav>
+    <!-- Feature Header -->
+   <header class="feature-header">
+       <h1>Expert Consultation</h1>
+       <p>Connect with our renewable energy experts for personalized guidance and solutions</p>
+   </header>
+    <!-- Main Content -->
+   <main class="feature-content">
+       <!-- Expert Profiles Section -->
+       <section class="feature-section">
+           <h2>Our Energy Experts</h2>
+           <div class="feature-grid">
+               <div class="info-card">
+                   <img src="https://via.placeholder.com/150" alt="Expert 1" style="width: 150px; border-radius: 50%; margin-bottom: 1rem;">
+                   <h3>Dr. Sarah Johnson</h3>
+                   <p class="expert-title">Solar Energy Specialist</p>
+                   <p>15+ years experience in solar system design and implementation</p>
+                   <div class="action-buttons">
+                       <a href="#booking-form" class="action-btn primary-action">Book Consultation</a>
+                   </div>
+               </div>
+                <div class="info-card">
+                   <img src="https://via.placeholder.com/150" alt="Expert 2" style="width: 150px; border-radius: 50%; margin-bottom: 1rem;">
+                   <h3>Michael Chen</h3>
+                   <p class="expert-title">Wind Energy Consultant</p>
+                   <p>Expert in wind farm planning and renewable energy integration</p>
+                   <div class="action-buttons">
+                       <a href="#booking-form" class="action-btn primary-action">Book Consultation</a>
+                   </div>
+               </div>
+                <div class="info-card">
+                   <img src="https://via.placeholder.com/150" alt="Expert 3" style="width: 150px; border-radius: 50%; margin-bottom: 1rem;">
+                   <h3>Emma Rodriguez</h3>
+                   <p class="expert-title">Energy Efficiency Advisor</p>
+                   <p>Specialized in residential and commercial energy optimization</p>
+                   <div class="action-buttons">
+                       <a href="#booking-form" class="action-btn primary-action">Book Consultation</a>
+                   </div>
+               </div>
+           </div>
+       </section>
+        <!-- Booking Form Section -->
+       <section class="feature-section" id="booking-form">
+           <h2>Book a Consultation</h2>
+           <div class="contact-container">
+               <form id="consultationForm" class="contact-form">
+                   <div class="form-group">
+                       <label for="name">Full Name</label>
+                       <input type="text" id="name" name="name" required>
+                   </div>
+                    <div class="form-group">
+                       <label for="email">Email</label>
+                       <input type="email" id="email" name="email" required>
+                   </div>
+                    <div class="form-group">
+                       <label for="phone">Phone Number</label>
+                       <input type="tel" id="phone" name="phone" required>
+                   </div>
+                    <div class="form-group">
+                       <label for="expert">Select Expert</label>
+                       <select id="expert" name="expert" required>
+                           <option value="">Choose an expert...</option>
+                           <option value="sarah">Dr. Sarah Johnson</option>
+                           <option value="michael">Michael Chen</option>
+                           <option value="emma">Emma Rodriguez</option>
+                       </select>
+                   </div>
+                    <div class="form-group">
+                       <label for="date">Preferred Date</label>
+                       <input type="date" id="date" name="date" required>
+                   </div>
+                    <div class="form-group">
+                       <label for="time">Preferred Time</label>
+                       <select id="time" name="time" required>
+                           <option value="">Select time slot...</option>
+                           <option value="9:00">9:00 AM</option>
+                           <option value="10:00">10:00 AM</option>
+                           <option value="11:00">11:00 AM</option>
+                           <option value="14:00">2:00 PM</option>
+                           <option value="15:00">3:00 PM</option>
+                           <option value="16:00">4:00 PM</option>
+                       </select>
+                   </div>
+                    <div class="form-group">
+                       <label for="message">Consultation Details</label>
+                       <textarea id="message" name="message" required 
+                           placeholder="Please describe your energy needs and any specific questions you have..."></textarea>
+                   </div>
+                    <button type="submit" class="submit-btn">Book Consultation</button>
+               </form>
+           </div>
+       </section>
+   </main>
+    <!-- Footer -->
+   <footer class="footer">
+       <div class="footer-content">
+           <div class="footer-section">
+               <h3>UmemeHub</h3>
+               <p>Your trusted platform for renewable energy solutions</p>
+           </div>
+           <div class="footer-section">
+               <h3>Quick Links</h3>
+               <a href="/">Home</a>
+               <a href="/#features">Features</a>
+               <a href="/#about">About</a>
+               <a href="/#contact">Contact</a>
+           </div>
+           <div class="footer-section">
+               <h3>Connect</h3>
+               <div class="social-links">
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-linkedin"></i></a>
+                   <a href="#"><i class="fab fa-github"></i></a>
+               </div>
+           </div>
+       </div>
+       <div class="footer-bottom">
+           <p>&copy; 2024 UmemeHub. All rights reserved.</p>
+       </div>
+   </footer>   
+</body>
+</html>
